@@ -1440,19 +1440,4 @@ df_original = df_original[feature_set]
 
 lucy_markov = Lucy(3, 3, 3, df_original, 1000, covariates)
 
-#matrices =  lucy_markov.run()
-
-
-nodes2 = np.asfortranarray([[0.0, 0.25,  0.5, 0.75, 1.0],
-                            [0.0, 2.0 , -2.0, 2.0 , 0.0],])
-
-curve2 = bezier.Curve(nodes2,  degree=4)
-intersections = curve2.intersect(curve2)
-curve2.plot(1000)
-plt.plot(nodes2[0], nodes2[1], "ro")
-plt.plot(intersections[0], intersections[1], "go")
-plt.legend()
-plt.show()
-
-
-ic (intersections)
+matrices =  lucy_markov.run()
