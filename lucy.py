@@ -4254,3 +4254,15 @@ st.set_page_config(page_title=page_title, page_icon=None, layout="wide",
                    initial_sidebar_state="auto", menu_items=None)
 
 st.title("Real-Time / Live Model Data Dashboard")
+
+# run various models
+features_df_oup = lucy_markov.get_features_df_window_oup()
+#features_df_ploup = lucy_markov.get_features_df_window_ploup()
+#features_df_tvoup = lucy_markov.get_features_df_window_tvoup()
+#features_df_levy = lucy_markov.get_features_df_window_levy()
+#features_df_rsoup = lucy_markov.get_features_df_window_rsoup_pyro()
+#features_df_heston_hawkes = lucy_markov.get_features_df_window_heston()
+#features_df_semi_markov = lucy_markov.get_features_df_window_semi_markov()
+#features_df_msm_scaling = lucy_markov.get_features_df_window_msm_scaling()
+#feature_df_multi_model = lucy_markov.get_features_df_window_multi_model_processes()
+
